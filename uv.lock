@@ -35,24 +35,16 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-<<<<<<< HEAD
     { name = "pre-commit" },
     { name = "ruff" },
-=======
-    { name = "ruff" },
->>>>>>> 9c5316b (ruff configured)
 ]
 
 [package.metadata]
 requires-dist = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.115.8" }]
 
 [package.metadata.requires-dev]
-<<<<<<< HEAD
 dev = [{ name = "pre-commit", specifier = ">=4.1.0" }]
 dev = [{ name = "ruff", specifier = ">=0.9.6" }]
-=======
-dev = [{ name = "ruff", specifier = ">=0.9.6" }]
->>>>>>> 9c5316b (ruff configured)
 
 [[package]]
 name = "certifi"
