@@ -43,8 +43,8 @@ dev = [
 requires-dist = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.115.8" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pre-commit", specifier = ">=4.1.0" }]
-dev = [{ name = "ruff", specifier = ">=0.9.6" }]
+dev = [{ name = "pre-commit", specifier = ">=4.1.0" },
+{ name = "ruff", specifier = ">=0.9.6" }]
 
 [[package]]
 name = "certifi"
