@@ -10,6 +10,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+<<<<<<< HEAD
     "pre-commit>=4.1.0",
     "ruff>=0.9.6",
 ]
@@ -48,3 +49,41 @@ section-order = [
     "local-folder",
 ]
 
+=======
+    "ruff>=0.9.6",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "C", # flake8-comprehensions
+    "B", # flake8-bugbear
+
+]
+ignore = [
+    "E501", # line too long
+    "C901", # too complex
+
+]
+
+[tool.ruff.lint.isort]
+order-by-type = true
+relative-imports-order = "closest-to-furthest"
+extra-standard-library = ["typing"]
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]
+>>>>>>> 9c5316b (ruff configured)
